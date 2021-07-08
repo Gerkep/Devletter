@@ -8,6 +8,7 @@ html, body{
     top: 0;
     background-color: black;
 }
+
 header{
     top: 0;
     position: relative;
@@ -26,7 +27,7 @@ header{
 }
 .wave-lower{
     position: absolute;
-    bottom: -486vh;
+    bottom: -466vh;
     left: -2vw;
     width: 110%;
     height: 80px;
@@ -36,9 +37,9 @@ header{
 header a{
     float: right;
     text-decoration: none;
-    padding: 3.5vw;
+    padding: 3vw;
     padding-top: 4vw;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: rgb(0, 0, 0);
     font-weight: 800;
 }
@@ -56,7 +57,7 @@ header a:hover{
 .section{
     background-color: black;
     height: auto;
-    padding: 10vh 0 10vh 0;
+    padding: 10vh 0 5vh 0;
     box-shadow: 0px 25px 40px rgb(0, 0, 0);
     border-bottom: solid 3px rgba(42, 42, 42, 0.795);
 }
@@ -280,12 +281,19 @@ footer{
     }
     header a{
         padding: 2vw 3vw 0vw 3vw;
+        font-size: 1.5em;
     }
     .wave{
-        bottom: -13vh;
-        width: 300%;
+        bottom: -10vh;
+        width: 600%;
         height: 120px;
-        background-size: 1300px 50px;
+        background-size: 1800px 50px;
+    }
+    .wave-lower{
+        bottom: -722vh;
+        width: 500%;
+        height: 60px;
+        background-size: 1800px 60px;
     }
     .intro{
         margin-bottom: 17vh;
@@ -293,18 +301,20 @@ footer{
     }
     .intro h2{
         font-size: 4.7em;
+        margin-bottom: 5vh;
     }
     .intro h1{
         font-size: 5em;
-        margin-top: -8vh !important;
+        margin-top: -12vh !important;
     }
     .signup{
-        width: 60%;
-        height: 40vh;
+        width: 50%;
+        height: 45vh;
         margin-top: -10vh;
     }
     #signup-email{
         height: 8vh;
+        font-size: 2em;
     }
     #signup-text{
         font-size: 2em;
@@ -314,10 +324,16 @@ footer{
         height: 8vh;
         font-size: 1.5em;
     }
+    .container{
+        width: 30vw;
+        height: 40vh;
+        margin: 4vh 4vh 4vh 4vh;
+        font-size: 2em;
+    }
     .about-text{
         width: 80%;
         height: 60vh;
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     .opinion-container{
         width: 60%;
@@ -325,12 +341,15 @@ footer{
         height: 15vh;
         padding: 2vh 5vw 2vh 5vw;
     }
-    .wave-lower{
-        bottom: -440vh;
-        width: 300%;
-        height: 60px;
-        background-size: 1300px 60px;
-    }
     .copyright { padding-left: 45vw;}
-    .media-icons{grid-area: media-icons; padding-top: 5vh; margin-left: -6vw;}
+    .media-icons{grid-area: media-icons; padding-top: 5vh; margin-left: -15vw; margin-top: -2vh; font-size: 2em;}
+    .media-icons a i{
+        margin: 0 3vh 0 3vh;
+    }
+    .media-icons .icon{
+        color: black;
+    }
+    .bottom{
+        height: 34vh;
+    }
 }
