@@ -77,11 +77,11 @@ header a:hover{
 }
 .intro h1{
     font-size: 2.8em;
-    font-family: 'Mulish', sans-serif;
+font-family: 'Lato', sans-serif;
 }
 .intro h2{
     font-size: 2.4em;
-    font-family: 'Mulish', sans-serif;
+font-family: 'Lato', sans-serif;
 }
 .signup{
     width: 90%;
@@ -169,7 +169,7 @@ header a:hover{
     border-radius: 20px;
     box-shadow: 10px 15px 20px rgb(0, 0, 0); 
     margin: 0 2vw 2vh 2vw;
-    font-family: 'Mulish', sans-serif;
+font-family: 'Lato', sans-serif;
 }
 .icon { grid-area: icon; padding-top: 1vh;}
 .offer-text { grid-area: offer-text; text-align: center;}
@@ -194,7 +194,7 @@ header a:hover{
 #about-text{
     font-size: 1.3em;
     text-align: center;
-    font-family: 'Mulish', sans-serif;
+font-family: 'Lato', sans-serif;
 }
 .about-text{
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
@@ -212,7 +212,7 @@ header a:hover{
     overflow-y: scroll;
 }
 .opinion-container{
-    font-family: 'Mulish', sans-serif;
+font-family: 'Lato', sans-serif;
     width: 90%;
     display: grid; 
     grid-template-columns: 20vw 60vw; 
@@ -241,7 +241,7 @@ header a:hover{
     margin-top: 5vh;
 }
 footer{
-    font-family: 'Mulish', sans-serif;
+font-family: 'Lato', sans-serif;
     width: 100%;
     bottom: 0;
      background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
