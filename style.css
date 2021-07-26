@@ -44,7 +44,7 @@ header a{
     padding-top: 4vw;
     font-size: 1.1em;
     color: rgb(0, 0, 0);
-    font-weight: 800;
+    font-weight: 900;
 }
 header a:hover{
     transition: all 0.5s ease;
@@ -53,9 +53,10 @@ header a:hover{
 }
 .logo{
     float: left !important;
-    padding: 6vw 0 0 5vw;
+    padding: 8vw 0 0 5vw;
     font-size: 2em;
     font-weight: 1000;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .section{
     background-color: black;
@@ -80,11 +81,11 @@ header a:hover{
 }
 .intro h1{
     font-size: 2.8em;
-font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .intro h2{
     font-size: 2.4em;
-font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .signup{
     width: 90%;
@@ -172,7 +173,7 @@ font-family: 'Lato', sans-serif;
     border-radius: 20px;
     box-shadow: 10px 15px 20px rgb(0, 0, 0); 
     margin: 0 2vw 2vh 2vw;
-font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .icon { grid-area: icon; padding-top: 1vh;}
 .offer-text { grid-area: offer-text; text-align: center;}
@@ -197,7 +198,7 @@ font-family: 'Lato', sans-serif;
 #about-text{
     font-size: 1.3em;
     text-align: center;
-font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .about-text{
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
@@ -215,7 +216,7 @@ font-family: 'Lato', sans-serif;
     overflow-y: scroll;
 }
 .opinion-container{
-font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     width: 90%;
     display: grid; 
     grid-template-columns: 20vw 60vw; 
@@ -235,7 +236,7 @@ font-family: 'Lato', sans-serif;
   display: flex;
   flex-wrap: wrap; 
 }
-.opinion-name { grid-area: opinion-name; margin-left: 2vw; font-size: 2em; white-space: nowrap; overflow: hidden; padding-top: 0.5vh; width: 60vw; font-family: 'Mulish', sans-serif;}
+.opinion-name { grid-area: opinion-name; margin-left: 2vw; font-size: 2em; white-space: nowrap; overflow: hidden; padding-top: 0.5vh; width: 60vw;     font-family: 'Source Sans Pro', sans-serif;}
 .opinion-stars { grid-area: opinion-text; margin-left: 2vw; padding-bottom: 2vh; overflow: hidden; font-size: 2em;}
 .bottom{
     height: 18vh;
@@ -244,7 +245,7 @@ font-family: 'Lato', sans-serif;
     margin-top: 5vh;
 }
 footer{
-font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
     bottom: 0;
      background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
