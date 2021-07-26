@@ -16,6 +16,9 @@ header{
     overflow: hidden;
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
 }
+.premium-txt{
+    color: rgba(63,255,154,1);
+}
 .wave{
     position: absolute;
     bottom: -10vh;
@@ -27,7 +30,7 @@ header{
 }
 .wave-lower{
     position: absolute;
-    bottom: -466vh;
+    bottom: -473vh;
     left: -2vw;
     width: 110%;
     height: 80px;
