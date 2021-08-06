@@ -4,7 +4,7 @@
 }
 html, body{
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     top: 0;
     background-color: black;
 }
@@ -12,7 +12,7 @@ html, body{
 header{
     top: 0;
     position: relative;
-    height: 15vh;
+    height: 8rem;
     overflow: hidden;
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
 }
@@ -21,17 +21,18 @@ header{
 }
 .wave{
     position: absolute;
-    bottom: -10vh;
+    top: 5rem;
     left: 0;
     width: 100%;
     height: 120px;
     background: url("./images/fala-gora.png");
     background-size: 450px 50px;
+    background-repeat: no-repeat;
 }
 .wave-lower{
     position: absolute;
-    bottom: -473vh;
-    left: -2vw;
+    top: 314rem;
+    left: -1rem;
     width: 110%;
     height: 80px;
     background: url("./images/wave-low.png");
@@ -40,8 +41,7 @@ header{
 header a{
     float: right;
     text-decoration: none;
-    padding: 3vw;
-    padding-top: 4vw;
+    padding: 2rem 1rem 0 0.5rem;
     font-size: 1.1em;
     color: rgb(0, 0, 0);
     font-weight: 900;
@@ -53,7 +53,7 @@ header a:hover{
 }
 .logo{
     float: left !important;
-    padding: 8vw 0 0 5vw;
+    padding: 1rem 0 0 1rem;
     font-size: 2em;
     font-weight: 1000;
     font-family: 'Source Sans Pro', sans-serif;
@@ -61,22 +61,22 @@ header a:hover{
 .section{
     background-color: black;
     height: auto;
-    padding: 10vh 0 5vh 0;
+    padding: 5rem 0 2rem 0;
     box-shadow: 0px 25px 40px rgb(0, 0, 0);
     border-bottom: solid 3px rgba(42, 42, 42, 0.795);
 }
 #first-section{
-    padding-bottom: 20vh;
+    padding-bottom: 6rem;
 }
 #second-section, #fourth-section{
     background-color: rgb(17, 17, 17);
 }
 .intro{
     margin: 0 auto;
-    margin-bottom: 10vh;
-    width: 90vw;
+    width: 90%;
+    margin-bottom: 7rem;
     text-align: center;
-    line-height: 5.8vh;
+    line-height: 3rem;
     color: white;
 }
 .intro h1{
@@ -90,8 +90,8 @@ header a:hover{
 .signup{
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 8vh;
-    height: 30vh;
+    margin-bottom: 4rem;
+    height: 17rem;
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
     box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.616);
     border-radius: 15px;
@@ -103,13 +103,13 @@ header a:hover{
 }
 #signup-email{
     width: 100%;
-    height: 6vh;
+    height: 3rem;
     border-radius: 30px;
     position: relative;
-    top: -2vh;
+    top: -1rem;
     font-size: 1.5em;
     color: rgba(0, 0, 0, 0.808);
-    padding-left: 3vw;
+    padding-left: 1rem;
     border: dashed black 3px;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.192);
@@ -122,11 +122,12 @@ header a:hover{
 #signup-text{
     color: rgb(0, 0, 0);
     font-size: 1.1em;
-    margin-top: 1vh;
+    margin-top: 0.5rem;
     font-weight: 1000;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 #signup-submit{
-    height: 5vh;
+    height: 3rem;
     width: 60%;
     font-size: 1.2em;
     font-weight: 550;
@@ -150,7 +151,7 @@ header a:hover{
     color: white;
 }
 .underlined-text{
-    padding-bottom: 1vh;
+    padding-bottom: 1rem;
     border-bottom: solid 1px rgba(255, 255, 255, 0.356);
     color: white;
     text-align: center;
@@ -158,7 +159,7 @@ header a:hover{
 .container{
     background-color: black;
     width: 45%;
-    height: 20vh;
+    height: 12rem;
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr; 
@@ -172,10 +173,10 @@ header a:hover{
     background-color: rgba(255, 255, 255, 0.068);
     border-radius: 20px;
     box-shadow: 10px 15px 20px rgb(0, 0, 0); 
-    margin: 0 2vw 2vh 2vw;
+    margin: 0 0.5rem 1.5rem 0.5rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
-.icon { grid-area: icon; padding-top: 1vh;}
+.icon { grid-area: icon; padding-top: 0.5rem;}
 .offer-text { grid-area: offer-text; text-align: center;}
 .pro{
     font-weight: 1000;
@@ -202,25 +203,28 @@ header a:hover{
 }
 .about-text{
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
-    padding: 5vh 5vw 5vh 5vw;
+    padding: 2rem 2rem 6rem 2rem;
     border-radius: 40px;
-    height: 65vh;
-    width: 95vw;
+    height: 40rem;
+    width: 90%;
     font-weight: 600;
     margin: 0 auto;
+    overflow-y: scroll;
 }
 .opinions{
-    margin-top: 10vh;
+    margin-top: 5rem;
     width: 100%;
-    height: 50vh;
+    height: 24rem;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .opinion-container{
     font-family: 'Source Sans Pro', sans-serif;
     width: 90%;
+    padding-left: 0.5rem;
     display: grid; 
-    grid-template-columns: 20vw 60vw; 
-    grid-template-rows: 10vh; 
+    grid-template-columns: 5rem 20rem; 
+    grid-template-rows: 6rem; 
     gap: 0px 0px; 
     grid-template-areas: 
       "avatar opinion-content";
@@ -236,24 +240,23 @@ header a:hover{
   display: flex;
   flex-wrap: wrap; 
 }
-.opinion-name { grid-area: opinion-name; margin-left: 2vw; font-size: 2em; white-space: nowrap; overflow: hidden; padding-top: 0.5vh; width: 60vw;     font-family: 'Source Sans Pro', sans-serif;}
-.opinion-stars { grid-area: opinion-text; margin-left: 2vw; padding-bottom: 2vh; overflow: hidden; font-size: 2em;}
-.bottom{
-    height: 18vh;
+.opinion-name { grid-area: opinion-name; margin-left: 1rem; margin-bottom: 0; font-size: 2em; white-space: nowrap; overflow: hidden; padding-top: 0.5rem; width: 25rem;font-family: 'Source Sans Pro', sans-serif;}
+.opinion-stars { grid-area: opinion-text; margin-left: 1rem; overflow: hidden; font-size: 2em;}
+.bottom-form{
+    height: 11rem;
 }
 #ending-intro{
-    margin-top: 5vh;
+    margin-top: 5rem;
 }
 footer{
     font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
     bottom: 0;
      background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
-     height: 18vh;
 }
 .footer-content{
     display: grid; 
-    grid-template-columns: 45vw 55vw; 
+    grid-template-columns: 13rem 20rem; 
     grid-template-rows: 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
@@ -262,7 +265,7 @@ footer{
 .social-media {
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 8vh 4vh; 
+    grid-template-rows: 4rem 2rem; 
     gap: 0px 0px; 
     grid-template-areas: 
       "media-icons"
@@ -271,89 +274,98 @@ footer{
     color: rgb(0, 0, 0);
     font-weight: 600;
   }
-  .contact-info { grid-area: contact-info; font-size: 1.1em; padding-left: 2vw; padding-top: 8vh; font-weight: 600;}
+  .contact-info { grid-area: contact-info; font-size: 1.1em; padding-left: 0.5rem; padding-top: 6rem; font-weight: 600;}
   .contact-info p{margin: 0;}
-  .copyright { grid-area: copyright; font-size: 1em; color: rgb(0, 0, 0); padding-top: 1vh; padding-left: 18vw;}
-  .social-media { grid-area: social-media; padding-top: 5vh;}
-  .media-icons{grid-area: media-icons; padding-top: 3vh; padding-left: 2vw;}
+  .copyright { grid-area: copyright; font-size: 1em; color: rgb(0, 0, 0); padding-top: 1.5rem; padding-left: 6rem;}
+  .social-media { grid-area: social-media; padding-top: 4rem;}
+  .media-icons{grid-area: media-icons; padding-top: 1.8rem; padding-left: 0.4rem;}
   .media-icons a{color: black; margin-left: 1vh;}
   
 @media(min-width: 1200px){
     .logo{
-        padding: 2vw 0 0 3vw;
+        padding: 2rem 0 0 3rem;
         font-size: 4em;
     }
     header a{
-        padding: 2vw 3vw 0vw 3vw;
-        font-size: 1.5em;
+        padding: 2rem 3rem 0rem 3rem;
+        font-size: 2em;
     }
     .wave{
-        bottom: -10vh;
-        width: 600%;
+        bottom: -4em;
+        width: 900%;
         height: 120px;
-        background-size: 1800px 50px;
+        background-size: 2000px 70px;
     }
     .wave-lower{
-        bottom: -722vh;
+        bottom: -422rem;
         width: 500%;
         height: 60px;
         background-size: 1800px 60px;
     }
     .intro{
-        margin-bottom: 17vh;
-        margin-top: 10vh;
+        margin-bottom: 10rem;
+        margin-top: 6rem;
     }
     .intro h2{
         font-size: 4.7em;
-        margin-bottom: 5vh;
+        margin-bottom: 3rem;
     }
     .intro h1{
         font-size: 5em;
-        margin-top: -12vh !important;
     }
     .signup{
         width: 50%;
         height: 45vh;
-        margin-top: -10vh;
+        border-radius: 40px;
     }
     #signup-email{
-        height: 8vh;
+        height: 6rem;
         font-size: 2em;
     }
     #signup-text{
         font-size: 2em;
-        margin-top: 4vh;
+        margin-top: 3rem;
     }
     #signup-submit{
-        height: 8vh;
-        font-size: 1.5em;
+        height: 6rem;
+        font-size: 2em;
     }
     .container{
-        width: 30vw;
-        height: 40vh;
-        margin: 4vh 4vh 4vh 4vh;
+        width: 22rem;
+        height: 24rem;
+        margin: 0 4rem 4rem 0;
         font-size: 2em;
     }
     .about-text{
-        width: 80%;
-        height: 60vh;
+        width: 60%;
+        height: 30rem;
         font-size: 1.6em;
+        padding: 4rem 10rem 4rem 10rem;
+
     }
     .opinion-container{
         width: 60%;
-        grid-template-columns: 5vw 1fr; 
+        grid-template-columns: 5rem 1fr; 
         height: 15vh;
-        padding: 2vh 5vw 2vh 5vw;
+        padding: 2rem 5rem 2rem 5rem;
+        border-radius: 40px;
+        font-size: 2em;
+        text-align: center;
     }
-    .copyright { padding-left: 45vw;}
-    .media-icons{grid-area: media-icons; padding-top: 5vh; margin-left: -15vw; margin-top: -2vh; font-size: 2em;}
+    .bottom-form{
+        height: 24rem;
+    }
+    .footer-content{
+        grid-template-columns: 45rem 55rem; 
+        font-size: 1.5em;
+    }
+    .copyright { padding-left: 84rem; white-space: nowrap; margin-top: 1rem;}
+    .media-icons{grid-area: media-icons; padding-top: 2rem; margin-left: -7rem; margin-top: -1rem; font-size: 2em;}
     .media-icons a i{
-        margin: 0 3vh 0 3vh;
+        margin: 0 3rem 0 3rem;
     }
     .media-icons .icon{
         color: black;
     }
-    .bottom{
-        height: 34vh;
-    }
+
 }
