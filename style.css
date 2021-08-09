@@ -29,15 +29,7 @@ header{
     background-size: 450px 50px;
     background-repeat: no-repeat;
 }
-.wave-lower{
-    position: absolute;
-    top: 314rem;
-    left: -1rem;
-    width: 110%;
-    height: 80px;
-    background: url("./images/wave-low.png");
-    background-size: 590px 80px;
-}
+
 header a{
     float: right;
     text-decoration: none;
@@ -54,7 +46,7 @@ header a:hover{
 .logo{
     float: left !important;
     padding: 1rem 0 0 1rem;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 1000;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -63,7 +55,6 @@ header a:hover{
     height: auto;
     padding: 5rem 0 2rem 0;
     box-shadow: 0px 25px 40px rgb(0, 0, 0);
-    border-bottom: solid 3px rgba(42, 42, 42, 0.795);
 }
 #first-section{
     padding-bottom: 6rem;
@@ -74,17 +65,17 @@ header a:hover{
 .intro{
     margin: 0 auto;
     width: 90%;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     text-align: center;
     line-height: 3rem;
     color: white;
 }
 .intro h1{
-    font-size: 2.8em;
+    font-size: 3rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .intro h2{
-    font-size: 2.4em;
+    font-size: 2.4rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .signup{
@@ -121,7 +112,7 @@ header a:hover{
 }
 #signup-text{
     color: rgb(0, 0, 0);
-    font-size: 1.1em;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
     font-weight: 1000;
     font-family: 'Source Sans Pro', sans-serif;
@@ -183,7 +174,7 @@ header a:hover{
     font-size: 1.2em;
 }
 .offer-head{
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 1000;
     margin: 0;
 }
@@ -194,63 +185,110 @@ header a:hover{
 #third-section h3{
     text-align: center;
     color: white;
-    font-size: 1.8em;
-}
-#about-text{
-    font-size: 1.3em;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
 }
 .about-text{
-    background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
-    padding: 2rem 2rem 6rem 2rem;
-    border-radius: 40px;
-    height: 40rem;
-    width: 90%;
-    font-weight: 600;
+    max-width: 90%;
+    border-radius: 25px;
+    padding: 2rem 2rem 2rem 2rem;
     margin: 0 auto;
+    background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
+    color: black;
+    font-size: 1.2rem;
+}
+.expand-btn{
+    display: block;
+    width: 7rem;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    color: #ffffff;
+}
+.expand-btn::after{
+    content: '\25be';
+    float: right;
+    transform: scale(3);
+}
+.expand-btn--active{display: none;}
+.more-opinions{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+    width: 102%;
+    border-radius: 25px;
+    margin: 0 auto;
+    color: black;
     overflow-y: scroll;
 }
+
 .opinions{
     margin-top: 5rem;
-    width: 100%;
-    height: 24rem;
+    max-height: 25rem;
+    overflow: hidden;
     overflow-y: scroll;
-    overflow-x: hidden;
 }
+.opinions::-webkit-scrollbar {
+    display: none;
+  }
 .opinion-container{
     font-family: 'Source Sans Pro', sans-serif;
     width: 90%;
-    padding-left: 0.5rem;
     display: grid; 
-    grid-template-columns: 5rem 20rem; 
-    grid-template-rows: 6rem; 
-    gap: 0px 0px; 
+    grid-template-columns: 5rem; 
+    grid-gap: 10px;
+    grid-template-rows: auto; 
     grid-template-areas: 
-      "avatar opinion-content";
+      "avatar opinion-content"; 
     box-shadow: 7px 7px 24px rgb(0, 0, 0);
     margin: 0 auto;
     margin-top: 3vh;
-    border-radius: 15px;
+    padding: 0 1rem 1rem 1rem;
+    overflow: hidden;
+    border-radius: 25px;
     background-color: rgb(34, 34, 34);
     color: white;
 }
-.avatar { grid-area: avatar; width: 4.5rem; height: 5rem; border-radius: 50%; padding-top: 1vh;}
 .opinion-content {
-  display: flex;
-  flex-wrap: wrap; 
-}
-.opinion-name { grid-area: opinion-name; margin-left: 1rem; margin-bottom: 0; font-size: 2em; white-space: nowrap; overflow: hidden; padding-top: 0.5rem; width: 25rem;font-family: 'Source Sans Pro', sans-serif;}
-.opinion-stars { grid-area: opinion-text; margin-left: 1rem; overflow: hidden; font-size: 2em;}
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+    grid-template-areas: 
+      "opinion-name"
+      "opinion-stars"; 
+    grid-area: opinion-content; 
+  }
+  .opinion-name { 
+    grid-area: opinion-name; 
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+  .opinion-txt {
+    grid-area: opinion-stars; 
+  }
+  .avatar { grid-area: avatar; max-width: 5rem; height: 5rem; border-radius: 50%;  justify-self: center; align-self: center; }
 .bottom-form{
     height: 11rem;
 }
 #ending-intro{
     margin-top: 5rem;
 }
+.wave-lower{
+    position: relative;
+    top: 0;
+    left: -1rem;
+    width: 110%;
+    height: 80px;
+    background: url("./images/wave-low.png");
+    background-size: 590px 80px;
+}
 footer{
     font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
+    height: 16rem;
     bottom: 0;
      background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
 }
@@ -274,14 +312,17 @@ footer{
     color: rgb(0, 0, 0);
     font-weight: 600;
   }
-  .contact-info { grid-area: contact-info; font-size: 1.1em; padding-left: 0.5rem; padding-top: 6rem; font-weight: 600;}
+  .contact-info { grid-area: contact-info; font-size: 1.1em; padding-left: 0.5rem; padding-top: 1.5rem; font-weight: 600;}
   .contact-info p{margin: 0;}
   .copyright { grid-area: copyright; font-size: 1em; color: rgb(0, 0, 0); padding-top: 1.5rem; padding-left: 6rem;}
-  .social-media { grid-area: social-media; padding-top: 4rem;}
+  .social-media { grid-area: social-media;}
   .media-icons{grid-area: media-icons; padding-top: 1.8rem; padding-left: 0.4rem;}
   .media-icons a{color: black; margin-left: 1vh;}
   
 @media(min-width: 1200px){
+    #first-section{
+        height: 100vh;
+    }
     .logo{
         padding: 2rem 0 0 3rem;
         font-size: 4em;
@@ -294,28 +335,30 @@ footer{
         bottom: -4em;
         width: 900%;
         height: 120px;
-        background-size: 2000px 70px;
+        background-size: 100vw 70px;
     }
     .wave-lower{
-        bottom: -422rem;
+        position: absolute;
+        top: 392rem;
         width: 500%;
         height: 60px;
-        background-size: 1800px 60px;
+        background-size: 100% 60px;
     }
     .intro{
-        margin-bottom: 10rem;
-        margin-top: 6rem;
+        margin-bottom: 8rem;
+        margin-top: 3rem;
     }
     .intro h2{
-        font-size: 4.7em;
+        font-size: 4.7rem;
         margin-bottom: 3rem;
     }
     .intro h1{
-        font-size: 5em;
+        font-size: 5vw;
     }
     .signup{
         width: 50%;
-        height: 45vh;
+        height: auto;
+        padding: 0 2rem 2rem 2rem;
         border-radius: 40px;
     }
     #signup-email{
@@ -323,7 +366,7 @@ footer{
         font-size: 2em;
     }
     #signup-text{
-        font-size: 2em;
+        font-size: 1.5vw;
         margin-top: 3rem;
     }
     #signup-submit{
@@ -335,22 +378,12 @@ footer{
         height: 24rem;
         margin: 0 4rem 4rem 0;
         font-size: 2em;
-    }
-    .about-text{
+    }.about-text{
         width: 60%;
-        height: 30rem;
-        font-size: 1.6em;
-        padding: 4rem 10rem 4rem 10rem;
-
+        font-size: 1.4vw;
     }
     .opinion-container{
-        width: 60%;
-        grid-template-columns: 5rem 1fr; 
-        height: 15vh;
-        padding: 2rem 5rem 2rem 5rem;
-        border-radius: 40px;
-        font-size: 2em;
-        text-align: center;
+        width: 50%;
     }
     .bottom-form{
         height: 24rem;
