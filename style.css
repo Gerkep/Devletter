@@ -3,10 +3,10 @@
     padding: 0;
 }
 html, body{
-    height: 100%;
     width: 100%;
     top: 0;
     background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header{
@@ -55,9 +55,15 @@ header a:hover{
     height: auto;
     padding: 5rem 0 2rem 0;
     box-shadow: 0px 25px 40px rgb(0, 0, 0);
+    border-radius: 30px;
 }
 #first-section{
     padding-bottom: 6rem;
+    border-radius: 0;
+}
+#second-section{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 #second-section, #fourth-section{
     background-color: rgb(17, 17, 17);
@@ -71,7 +77,7 @@ header a:hover{
     color: white;
 }
 .intro h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .intro h2{
@@ -195,6 +201,8 @@ header a:hover{
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
     color: black;
     font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
 }
 .expand-btn{
     display: block;
@@ -218,15 +226,13 @@ header a:hover{
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s;
-    width: 102%;
+    width: 100%;
     border-radius: 25px;
     margin: 0 auto;
-    color: black;
-    overflow-y: scroll;
+    margin-bottom: 2rem;
 }
 
 .opinions{
-    margin-top: 5rem;
     max-height: 25rem;
     overflow: hidden;
     overflow-y: scroll;
@@ -245,7 +251,7 @@ header a:hover{
       "avatar opinion-content"; 
     box-shadow: 7px 7px 24px rgb(0, 0, 0);
     margin: 0 auto;
-    margin-top: 3vh;
+    margin-top: 3rem;
     padding: 0 1rem 1rem 1rem;
     overflow: hidden;
     border-radius: 25px;
@@ -278,7 +284,7 @@ header a:hover{
 }
 .wave-lower{
     position: relative;
-    top: 0;
+    top: -1rem;
     left: -1rem;
     width: 110%;
     height: 80px;
@@ -287,23 +293,18 @@ header a:hover{
 }
 footer{
     font-family: 'Source Sans Pro', sans-serif;
-    height: 14rem;
+    height: 12rem;
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
 }
 .footer-content{
     display: flex;
     width: 100%;
 }
-.social-media{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: right;
-}
-  .contact-info {font-size: 1.1rem; padding-left: 0.5rem; padding-top: 1.5rem; font-weight: 600;}
+  .contact-info {position: absolute; left: 0.5rem; font-size: 1.1rem;  font-weight: 600; margin-top: 1rem;}
   .contact-info p{margin: 0;}
-  .copyright {font-size: 1em; color: rgb(0, 0, 0); padding-top: 1.5rem;margin-left: 6rem;}
-  .media-icons{padding-top: 1.8rem;}
-  .media-icons a{color: black; margin-left: 1vh;}
+  .copyright {position: absolute; right: 1rem; font-size: 1em; color: rgb(0, 0, 0); padding-top: 4rem;margin-left: 6rem;}
+  .media-icons{position: absolute; right: 0; padding-top: 1rem;}
+  .media-icons a{color: black; margin-left: 0.8rem;}
   
 @media(min-width: 1200px){
     #first-section{
@@ -372,12 +373,15 @@ footer{
     .bottom-form{
         height: 24rem;
     }
-    .media-icons{padding-top: 1.8rem; padding-left: auto; align-self: center; font-size: 2rem;}
+    .footer-content{
+        justify-content: center;
+    }
+    .media-icons{position: inherit; padding-top: 1rem; font-size: 2.5rem;}
     .media-icons a i{
         margin: 0 3rem 0 3rem;
     }
-    .media-icons .icon{
-        color: black;
+    .copyright{
+        margin-top: 2rem;
     }
 
 }

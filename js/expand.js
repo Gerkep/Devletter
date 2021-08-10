@@ -5,7 +5,7 @@ document.querySelectorAll('.expand-btn').forEach(button => {
         button.classList.toggle('expand-btn--active');
 
         if(button.classList.contains('expand-btn--active')){
-            content.style.maxHeight = content.scrollHeight + 'px'
+            content.style.maxHeight = content.scrollHeight + 100 +'px'
         }else{
             content.style.maxHeight = 0;
         }
