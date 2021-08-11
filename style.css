@@ -3,21 +3,18 @@
     padding: 0;
 }
 html, body{
-    width: 100%;
+    min-width: 100%;
     top: 0;
     background-color: black;
-    font-family: 'Source Sans Pro', sans-serif;
 }
-
 header{
     top: 0;
-    position: relative;
-    height: 8rem;
+    height: 7.8rem;
     overflow: hidden;
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
 }
 .premium-txt{
-    color: rgba(63,255,154,1);
+    color: rgba(63,255,150,1);
 }
 .wave{
     position: absolute;
@@ -25,18 +22,18 @@ header{
     left: 0;
     width: 100%;
     height: 120px;
-    background: url("./images/fala-gora.png");
-    background-size: 450px 50px;
+    background: url("./images/wav-upp.png");
+    background-size: 450px 40px;
     background-repeat: no-repeat;
 }
 
 header a{
     float: right;
     text-decoration: none;
-    padding: 2rem 1rem 0 0.5rem;
+    padding: 1rem 1rem 0 0.5rem;
     font-size: 1.1em;
     color: rgb(0, 0, 0);
-    font-weight: 900;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 header a:hover{
     transition: all 0.5s ease;
@@ -45,7 +42,7 @@ header a:hover{
 }
 .logo{
     float: left !important;
-    padding: 1rem 0 0 1rem;
+    padding: 1.5rem 0 0 1rem;
     font-size: 2rem;
     font-weight: 1000;
     font-family: 'Source Sans Pro', sans-serif;
@@ -58,15 +55,15 @@ header a:hover{
     border-radius: 30px;
 }
 #first-section{
-    padding-bottom: 6rem;
     border-radius: 0;
+    height: 85vh;
 }
 #second-section{
     border-top-right-radius: 0;
     border-top-left-radius: 0;
 }
 #second-section, #fourth-section{
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(20, 20, 20);
 }
 .intro{
     margin: 0 auto;
@@ -75,6 +72,8 @@ header a:hover{
     text-align: center;
     line-height: 3rem;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+
 }
 .intro h1{
     font-size: 2.5rem;
@@ -85,20 +84,19 @@ header a:hover{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .signup{
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
-    margin-bottom: 4rem;
-    height: 17rem;
+    margin-top: 6rem;
+    height: 12rem;
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
-    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.616);
     border-radius: 15px;
 }
 .signup-form{
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
 }
-#signup-email{
+.signup-email{
     width: 100%;
     height: 3rem;
     border-radius: 30px;
@@ -108,34 +106,35 @@ header a:hover{
     color: rgba(0, 0, 0, 0.808);
     padding-left: 1rem;
     border: dashed black 3px;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.192);
-    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.596);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.109);
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.747);
     outline: none;
 }
-#signup-email::placeholder{
+.signup-email::placeholder{
     color: rgb(0, 0, 0);
 }
-#signup-text{
+.signup-text{
     color: rgb(0, 0, 0);
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     margin-top: 0.5rem;
-    font-weight: 1000;
+    margin-bottom: 0.5rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
-#signup-submit{
-    height: 3rem;
+.signup-submit{
+    height: 2.5rem;
     width: 60%;
     font-size: 1.2em;
-    font-weight: 550;
+    font-family: 'Source Sans Pro', sans-serif;
     border-radius: 25px;
     border: none;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.596);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.596);
     cursor: pointer;
     background-color: black;
     color: white;
 }
-#signup-submit:hover{
+.signup-submit:hover{
+    transition: all 0.3s ease;
     transform: scale(0.9);
     box-shadow: none;
 }
@@ -154,7 +153,6 @@ header a:hover{
     text-align: center;
 }
 .container{
-    background-color: black;
     width: 45%;
     height: 12rem;
     display: grid; 
@@ -169,43 +167,44 @@ header a:hover{
       align-items: center; 
     background-color: rgba(255, 255, 255, 0.068);
     border-radius: 20px;
-    box-shadow: 10px 15px 20px rgb(0, 0, 0); 
     margin: 0 0.5rem 1.5rem 0.5rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .icon { grid-area: icon; padding-top: 0.5rem;}
 .offer-text { grid-area: offer-text; text-align: center;}
-.pro{
+.pro-font{
     font-weight: 1000;
     font-size: 1.2em;
 }
-.offer-head{
+.twox-icon{
     font-size: 4rem;
     font-weight: 1000;
     margin: 0;
 }
-.premium{
+.premium-container{
     color: rgb(0, 0, 0);
     background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
 }
 #third-section h3{
-    text-align: center;
     color: white;
     font-size: 1.8rem;
+}
+.about-intro{
+    margin-bottom: 0;
 }
 .about-text{
     max-width: 90%;
     border-radius: 25px;
     padding: 2rem 2rem 2rem 2rem;
     margin: 0 auto;
-    background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
-    color: black;
+    color: white;
     font-size: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 }
 .expand-btn{
     display: block;
+    font-size: 1rem;
     width: 7rem;
     border-radius: 15px;
     margin: 0 auto;
@@ -222,7 +221,7 @@ header a:hover{
     transform: scale(3);
 }
 .expand-btn--active{display: none;}
-.more-opinions{
+.expand-more{
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s;
@@ -231,7 +230,6 @@ header a:hover{
     margin: 0 auto;
     margin-bottom: 2rem;
 }
-
 .opinions{
     max-height: 25rem;
     overflow: hidden;
@@ -255,7 +253,7 @@ header a:hover{
     padding: 0 1rem 1rem 1rem;
     overflow: hidden;
     border-radius: 25px;
-    background-color: rgb(34, 34, 34);
+    background: rgb(34, 34, 34);
     color: white;
 }
 .opinion-content {
@@ -266,21 +264,26 @@ header a:hover{
       "opinion-name"
       "opinion-stars"; 
     grid-area: opinion-content; 
-  }
-  .opinion-name { 
+}
+.opinion-name { 
     grid-area: opinion-name; 
     padding-top: 1rem;
     font-size: 2rem;
-  }
-  .opinion-txt {
+}
+.opinion-txt {
     grid-area: opinion-stars; 
-  }
-  .avatar { grid-area: avatar; max-width: 5rem; height: 5rem; border-radius: 50%;  justify-self: center; align-self: center; }
+}
+.avatar { grid-area: avatar; max-width: 5rem; height: 5rem; border-radius: 50%;  justify-self: center; align-self: center; }
 .bottom-form{
-    height: 11rem;
+    height: 12rem;
+    margin-bottom: 5rem;
 }
 #ending-intro{
     margin-top: 5rem;
+}
+#lower-signup-txt{
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 .wave-lower{
     position: relative;
@@ -319,10 +322,8 @@ footer{
         font-size: 2em;
     }
     .wave{
-        bottom: -4em;
-        width: 900%;
-        height: 120px;
-        background-size: 100vw 70px;
+        bottom: -2sem;
+        background-size: 100vw 80px;
     }
     .wave-lower{
         width: 110%;
@@ -346,17 +347,26 @@ footer{
         padding: 0 2rem 2rem 2rem;
         border-radius: 40px;
     }
-    #signup-email{
+    .signup-email{
         height: 6rem;
         font-size: 2em;
     }
-    #signup-text{
+    .signup-text{
         font-size: 1.5vw;
         margin-top: 3rem;
+        margin-bottom: 2rem;
     }
-    #signup-submit{
+    #lower-signup-txt{
+        font-size: 1.5vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .signup-submit{
         height: 6rem;
         font-size: 2em;
+    }
+    .twox-icon{
+        font-size: 6vw;
     }
     .container{
         width: 22rem;
@@ -369,12 +379,16 @@ footer{
     }
     .opinion-container{
         width: 50%;
+        min-height: 10rem;
     }
     .bottom-form{
         height: 24rem;
     }
     .footer-content{
         justify-content: center;
+    }
+    .contact-info{
+        font-size: 1.5rem;
     }
     .media-icons{position: inherit; padding-top: 1rem; font-size: 2.5rem;}
     .media-icons a i{
@@ -383,5 +397,4 @@ footer{
     .copyright{
         margin-top: 2rem;
     }
-
 }
