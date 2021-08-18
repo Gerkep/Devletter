@@ -302,11 +302,12 @@ footer{
 .footer-content{
     display: flex;
     width: 100%;
+    height: 9rem;
 }
-  .contact-info {position: absolute; left: 0.5rem; font-size: 1.1rem;  font-weight: 600; margin-top: 1rem;}
+  .contact-info {position: absolute; left: 0.5rem; font-size: 1.1rem;  font-weight: 600; }
   .contact-info p{margin: 0;}
   .copyright {position: absolute; right: 1rem; font-size: 1em; color: rgb(0, 0, 0); padding-top: 4rem;margin-left: 6rem;}
-  .media-icons{position: absolute; right: 0; padding-top: 1rem;}
+  .media-icons{position: absolute; right: 0;}
   .media-icons a{color: black; margin-left: 0.8rem;}
   
 @media(min-width: 1200px){
@@ -323,7 +324,7 @@ footer{
     }
     .wave{
         bottom: -2sem;
-        background-size: 100vw 80px;
+        background-size: 100vw 45px;
     }
     .wave-lower{
         width: 110%;
@@ -382,7 +383,7 @@ footer{
         min-height: 10rem;
     }
     .bottom-form{
-        height: 24rem;
+        height: 30rem;
     }
     .footer-content{
         justify-content: center;
