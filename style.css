@@ -81,10 +81,12 @@ header a:hover{
 .intro h1{
     font-size: 2.5rem;
     font-family: 'Source Sans Pro', sans-serif;
+    font-kerning: normal;
 }
 .intro h2{
     font-size: 2.4rem;
     font-family: 'Source Sans Pro', sans-serif;
+    font-kerning: normal;
 }
 .signup{
     width: 75%;
@@ -123,6 +125,7 @@ header a:hover{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-family: 'Source Sans Pro', sans-serif;
+    font-kerning: normal;
 }
 .signup-submit{
     height: 2.5rem;
@@ -183,7 +186,7 @@ header a:hover{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .icon { grid-area: icon; padding-top: 0.5rem;}
-.offer-text { grid-area: offer-text; text-align: center;}
+.offer-text { grid-area: offer-text; text-align: center;font-kerning: normal;}
 .pro-font{
     font-weight: 1000;
     font-size: 1.2em;
@@ -349,7 +352,7 @@ footer{
         font-size: 2vw;
     }
     .intro h2{
-        font-size: 4.7rem;
+        font-size: 6rem;
         margin-bottom: 3rem;
     }
     .intro h1{
