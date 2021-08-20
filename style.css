@@ -11,10 +11,10 @@ header{
     top: 0;
     height: 7.8rem;
     overflow: hidden;
-    background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
+    background: linear-gradient(10deg, rgb(0, 37, 158) 0%, rgba(30,255,223,1) 100%);
 }
 .premium-txt{
- background-image: linear-gradient(45deg, #3fff7cff, #1effdfff);
+ background-image: linear-gradient(20deg, rgb(0, 37, 158), #1effdfff);
     -webkit-background-clip: text;background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
@@ -29,7 +29,6 @@ header{
     background-size: 450px 40px;
     background-repeat: no-repeat;
 }
-
 header a{
     float: right;
     text-decoration: none;
@@ -93,7 +92,7 @@ header a:hover{
     margin: 0 auto;
     margin-top: 6rem;
     height: 12rem;
-    background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
+    background: linear-gradient(15deg, rgb(0, 37, 158) 0%, rgba(30,255,223,1) 110%);
     border-radius: 15px;
 }
 .signup-form{
@@ -110,7 +109,7 @@ header a:hover{
     font-size: 1.5em;
     color: rgba(0, 0, 0, 0.808);
     padding-left: 1rem;
-    border: dashed black 3px;
+    border: none;
     backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.109);
     box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.747);
@@ -138,19 +137,22 @@ header a:hover{
     cursor: pointer;
     background-color: black;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 }
 .occasion{font-size: 2rem;}
 .premium-btn{
-    background:  linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
+    background:  linear-gradient(15deg, rgb(0, 37, 158) 0%, rgba(30,255,223,1) 110%);
     color: black;
     font-size: 1.4rem;
     margin-top: -3rem;
     margin: 0 20% 0 20%;
     width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.premium-btn:hover{
+    color: black;
 }
 .signup-submit:hover{
     transition: all 0.3s ease;
@@ -202,7 +204,7 @@ header a:hover{
 }
 .premium-container{
     color: rgb(0, 0, 0);
-    background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
+    background: linear-gradient(30deg, rgb(0, 37, 158) 0%, rgba(30,255,223,1) 110%);
 }
 #third-section h3{
     color: white;
@@ -316,7 +318,7 @@ header a:hover{
 footer{
     font-family: 'Source Sans Pro', sans-serif;
     height: 12rem;
-    background: linear-gradient(160deg, rgba(63,255,124,1) 0%, rgba(30,255,223,1) 100%);
+    background: linear-gradient(15deg, rgb(0, 37, 158) 0%, rgba(30,255,223,1) 110%);
 }
 .footer-content{
     display: flex;
@@ -328,7 +330,7 @@ footer{
   .copyright {position: absolute; right: 1rem; font-size: 1em; color: rgb(0, 0, 0); padding-top: 4rem;margin-left: 6rem;}
   .media-icons{position: absolute; right: 0;}
   .media-icons a{color: black; margin-left: 0.8rem;}
-  
+  .media-icons a:hover{color: black;}
 @media(min-width: 1200px){
     #first-section{
         height: 100vh;
