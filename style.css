@@ -130,7 +130,7 @@ header a:hover{
 .signup-submit{
     height: 2.5rem;
     width: 60%;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 25px;
     border: none;
@@ -138,6 +138,10 @@ header a:hover{
     cursor: pointer;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .occasion{font-size: 2rem;}
 .premium-btn{
@@ -380,7 +384,7 @@ footer{
     }
     .signup-submit{
         height: 6rem;
-        font-size: 2em;
+        font-size: 2rem;
     }
     .twox-icon{
         font-size: 6vw;
