@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-width: 100%;
+    top: 0;
+    background: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.background{   
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 75%;
+    height: 10vh;
+    background-image: url("/images/dv-white.png");
+
+}
+.thanks{
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 4vh;
+    font-weight: 800;
+}
+.tick-icon{
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    margin-top: 8vh;
+    background-image: url("/images/tick-dv.png");
+}
+.reminder{
+    margin-top: 7vh;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.homepage{
+    margin-top: 4vh;
+    text-align: center;
+}
+.back-link{
+    background-image: linear-gradient(10deg, rgb(0, 37, 158), #1effdfff);
+    -webkit-background-clip: text;background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.premium{
+    background-image: linear-gradient(10deg, rgb(0, 37, 158), #1effdfff);
+    -webkit-background-clip: text;background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+@media(min-width: 1024px){
+.thanks{font-size: 4vw; margin-top: 8vh;}
+.tick-icon{width: 12rem; height: 12rem;}
+.reminder{font-size: 2vw; font-weight: 400;}
+.back-link{font-size: 2rem;}
+}

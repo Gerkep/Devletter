@@ -25,7 +25,7 @@ header{
     left: 0;
     width: 100%;
     height: 120px;
-    background: url("./images/wav-upp.png");
+    background: url("../images/wav-upp.png");
     background-size: 450px 40px;
     background-repeat: no-repeat;
 }
@@ -36,6 +36,7 @@ header a{
     font-size: 1.1em;
     color: rgb(0, 0, 0);
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
 }
 header a:hover{
     transition: all 0.5s ease;
@@ -44,10 +45,10 @@ header a:hover{
 }
 .logo{
     float: left !important;
-    padding: 1.5rem 0 0 1rem;
-    font-size: 2rem;
-    font-weight: 1000;
-    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0.3rem 0 0 0.5rem;
+}
+.logo-img{
+    width: 5rem;
 }
 .section{
     background-color: black;
@@ -125,6 +126,7 @@ header a:hover{
     margin-bottom: 0.5rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-kerning: normal;
+    font-weight: 600;
 }
 .signup-submit{
     height: 2.5rem;
@@ -150,6 +152,7 @@ header a:hover{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-weight: 900;
 }
 .premium-btn:hover{
     color: black;
@@ -218,10 +221,13 @@ header a:hover{
     border-radius: 25px;
     padding: 2rem 2rem 2rem 2rem;
     margin: 0 auto;
-    color: white;
+    color: rgba(255, 255, 255, 0.794);
     font-size: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    font-kerning: normal;
 }
 .expand-btn{
     display: block;
@@ -289,7 +295,7 @@ header a:hover{
 .opinion-name { 
     grid-area: opinion-name; 
     padding-top: 1rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .opinion-txt {
     grid-area: opinion-stars; 
@@ -312,7 +318,7 @@ header a:hover{
     left: -1rem;
     width: 110%;
     height: 80px;
-    background: url("./images/wave-low.png");
+    background: url("../images/wave-low.png");
     background-size: 590px 80px;
 }
 footer{
@@ -331,13 +337,15 @@ footer{
   .media-icons{position: absolute; right: 0;}
   .media-icons a{color: black; margin-left: 0.8rem;}
   .media-icons a:hover{color: black;}
-@media(min-width: 1200px){
+@media(min-width: 1000px){
     #first-section{
         height: 100vh;
     }
     .logo{
-        padding: 2rem 0 0 3rem;
-        font-size: 4em;
+        padding: 0.8rem 0 0 3rem;
+    }
+    .logo-img{
+        width: 5vw;
     }
     header a{
         padding: 2rem 3rem 0rem 3rem;
