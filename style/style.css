@@ -194,6 +194,8 @@ header a:hover{
     margin: 0 0.5rem 1.5rem 0.5rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
+.occasion{margin-bottom: 2rem; font-size: 3rem;}
+#countdown{font-size: 2rem;}
 .icon { grid-area: icon; padding-top: 0.5rem;}
 .offer-text { grid-area: offer-text; text-align: center;font-kerning: normal;}
 .pro-font{
@@ -331,9 +333,9 @@ footer{
     width: 100%;
     height: 9rem;
 }
-  .contact-info {position: absolute; left: 0.5rem; font-size: 1.1rem; padding-top: 3rem; font-weight: 600; }
+  .contact-info {position: absolute; left: 0.5rem; font-size: 1.1rem; padding-top: 4rem; font-weight: 600; }
   .contact-info p{margin: 0;}
-  .copyright {position: absolute; right: 1rem; font-size: 1em; color: rgb(0, 0, 0); padding-top:7rem;margin-left: 6rem;}
+  .copyright {position: absolute; right: 1rem; font-size: 1em; color: rgb(0, 0, 0); padding-top:7rem;margin-left: 6rem; font-weight: 800;}
   .media-icons{position: absolute; padding-top: 3rem; right: 0;}
   .media-icons a{color: black; margin-left: 0.8rem;}
   .media-icons a:hover{color: black;}
