@@ -50,3 +50,12 @@ a{
     text-align: center;
     font-size: 1.4rem;
 }
+@media(min-width:800px){
+    .error{
+        margin-top: 10vh;
+    }
+    .main-txt{
+        margin-top: 10vh;
+    }
+
+}
