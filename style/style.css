@@ -274,7 +274,7 @@ header a:hover{
 }
 .wave-lower{
     position: relative;
-    top: -1rem;
+    top: -0.2rem;
     left: -1rem;
     width: 110%;
     height: 80px;
@@ -283,20 +283,26 @@ header a:hover{
 }
 footer{
     font-family: 'Source Sans Pro', sans-serif;
-    height: 15rem;
     background: linear-gradient(15deg, rgb(0, 37, 158) 0%, rgba(30,255,223,1) 110%);
 }
-.footer-content{
-    display: flex;
-    width: 100%;
-    height: 9rem;
+.foot-logo-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
-  .contact-info {position: absolute; left: 1rem; font-size: 1.1rem; padding-top: 3rem; font-weight: 600; }
-  .contact-info p{margin: 0;}
-  .copyright {position: absolute; right: 1rem; font-size: 1em; color: rgb(0, 0, 0); padding-top:6rem;margin-left: 6rem; font-weight: 800;}
-  .media-icons{position: absolute; padding-top: 2rem; right: 1rem;}
-  .media-icons a{color: black; margin-left: 0.8rem;}
+.footer-logo{
+    width: 100%;
+}
+.footer-content{
+    width: 100%;
+    height: 12.5rem;
+}
+  .media-icons{width: 60%; margin: 0 auto; margin-top: 1rem; text-align: center;}
+  .media-icons a{color: black; margin: 0 0.4rem 0 0.4rem}
   .media-icons a:hover{color: black;}
+  .contact-info {font-size: 1.2rem; font-weight: 600; text-align: center; margin-top: 2rem;}
+  .contact-info p{margin: 0;}
+  .copyright { font-size: 1em; margin-top: 2rem; text-align: center; color: rgb(0, 0, 0);  font-weight: 800;}
 @media(min-width: 1000px){
     #first-section{
         height: 100vh;
@@ -379,17 +385,15 @@ footer{
     .bottom-form{
         height: 24rem;
     }
+    .foot-logo-container{
+        width: 30%;
+    }
     .footer-content{
-        justify-content: center;
+        width: 100%;
+        height: 24vh;
     }
-    .contact-info{
-        font-size: 1.5rem;
-    }
-    .media-icons{position: inherit; padding-top: 1rem; font-size: 2.5rem;}
-    .media-icons a i{
-        margin: 0 3rem 0 3rem;
-    }
-    .copyright{
-        margin-top: 2rem;
-    }
+      .media-icons{display: flex; justify-content: center; align-items: center; font-size: 1.2vw; margin: 0 auto;margin-top: 2rem; }
+      .media-icons a{color: black; margin: 0 1rem 0 1rem}
+      .contact-info {font-size: 2rem;}
+      .copyright { font-size: 1.5em;}
 }
