@@ -4,6 +4,7 @@
 }
 html, body{
     min-width: 100%;
+    max-width: 100%;
     top: 0;
     background-color: black;
 }
@@ -25,9 +26,8 @@ header{
     left: 0;
     width: 100%;
     height: 120px;
-    background: url("../images/wav-upp.png");
+    background: url("../images/wave2.png");
     background-size: 450px 40px;
-    background-repeat: no-repeat;
 }
 header a{
     float: right;
@@ -66,7 +66,7 @@ header a:hover{
     border-top-left-radius: 0;
 }
 #second-section, #fourth-section{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(15, 15, 15);
 }
 .intro{
     margin: 0 auto;
@@ -111,6 +111,8 @@ header a:hover{
     color: rgba(0, 0, 0, 0.808);
     border: none;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.747);
     outline: none;
@@ -278,7 +280,7 @@ header a:hover{
     left: -1rem;
     width: 110%;
     height: 80px;
-    background: url("../images/wave-low.png");
+    background: url("../images/wave2-low.png");
     background-size: 590px 80px;
 }
 footer{
